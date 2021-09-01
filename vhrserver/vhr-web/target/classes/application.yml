@@ -1,0 +1,32 @@
+spring:
+  flyway:
+    baseline-on-migrate: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/vhr?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+  rabbitmq:
+    username: guest
+    password: guest
+    host: 8.131.68.141
+    publisher-confirms: true
+    publisher-returns: true
+    port: 9500
+  redis:
+    host: 8.131.68.141
+    database: 0
+    port: 9003
+#    password: 123
+  cache:
+    cache-names: menus_cache
+
+server:
+  port: 8081
+  compression:
+    enabled: true
+fastdfs:
+  nginx:
+    host: http://8.131.68.141/
+
+
